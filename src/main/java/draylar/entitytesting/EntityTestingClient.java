@@ -11,6 +11,11 @@ public class EntityTestingClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        /*
+         * Registers our Cube Entity's renderer, which provides a model and texture for the entity.
+         *
+         * Entity Renderers can also manipulate the model before it renders based on entity context (EndermanEntityRenderer#render).
+         */
         EntityRendererRegistry.INSTANCE.register(EntityTesting.CUBE, (dispatcher, context) -> {
             return new CubeEntityRenderer(dispatcher);
         });

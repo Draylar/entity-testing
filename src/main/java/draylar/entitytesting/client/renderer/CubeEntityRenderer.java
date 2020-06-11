@@ -6,6 +6,9 @@ import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.util.Identifier;
 
+/*
+ * A renderer is used to provide an entity model, shadow size, and texture.
+ */
 public class CubeEntityRenderer extends MobEntityRenderer<CubeEntity, CubeEntityModel> {
 
     public CubeEntityRenderer(EntityRenderDispatcher entityRenderDispatcher) {
